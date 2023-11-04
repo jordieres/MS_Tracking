@@ -1,0 +1,511 @@
+<!DOCTYPE resources [
+    <!ENTITY app_name "MS_TrackingSocks">
+    <!ENTITY scan_button "SCAN">
+    <!ENTITY fav_button "FAV">
+    ]>
+<resources>
+    <string name="app_name">&app_name;</string>
+    <string name="tab_text_1">SmartBnd</string>
+    <string name="tab_text_2">MMR</string>
+    <string name="tab_text_3">MMR2</string>
+    <string name="tab_text_4">Sock1</string>
+    <string name="tab_text_5">Sock2</string>
+    <string name="tab_text_6">Others</string>
+    <string name="scan_button">&scan_button;</string>
+    <string name="fav_button">&fav_button;</string>
+    <string name="main_title">MS Tracking Socks</string>
+    <string name="app_version">&app_name; App version </string>
+    <string name="app_description">The &app_name; app let the user connect his smartphone with multiple wearable devices. The app will periodically send data to a MongoDB identified by the Mac address of the phone.
+        <br/>It works as follows:</string>
+    <string name="scan_button_description"><b><i>&scan_button; button</i></b>: pressing this button brings you to a new screen where you will be able to look for the available wearable devices near you.</string>
+    <string name="fav_button_description"><b><i>&fav_button; button</i></b>: pressing this button brings you to a new screen where you will be able to check your favourite wearable devices.</string>
+    <string name="app_information">Warning: The user has to give Bluetooth and Location privileges to the app. This settings shall be activated for a proper function of the app.</string>
+    <string name="ib_close_description">CloseButton</string>
+    <string name="available_mmr_devices">Available MMR Devices</string>
+    <string name="available_mmr2_devices">Available MMR2 Devices</string>
+    <string name="available_sock_devices">Available Sock Devices</string>
+    <string name="available_sock1_devices">Available Sock1 Devices</string>
+    <string name="available_sock2_devices">Available Sock2 Devices</string>
+    <string name="available_smartband_devices">Available SmartBands</string>
+    <string name="menu_back_to_scan">Scan new wearable</string>
+    <string name="menu_disconnect">Disconnect device</string>
+    <string name="menu_info">Info</string>
+    <string name="choose_device">Choose a device to connect</string>
+    <string name="smartband">SmartBand</string>
+    <string name="mmrdevice">MMR Devices</string>
+    <string name="mmr2device">MMR2 Devices</string>
+    <string name="sock1device">Sock1 Devices</string>
+    <string name="sock2device">Sock2 Devices</string>
+    <string name="others">Other Devices</string>
+    <string name="start_button">Start</string>
+    <string name="stop_button">Stop</string>
+    <string name="temperature">Temperature (\u2103):&#160;&#160;</string>
+    <string name="illuminance">Illuminance (Lux):&#160;&#160;</string>
+    <string name="altitude">Altitude (m):&#160;&#160;&#160;</string>
+    <string name="gyroscope">Gyroscope (x,y,z):&#160;&#160;&#160;</string>
+    <string name="magnetometer">Magnetometer (x,y,z):&#160;&#160;&#160;</string>
+    <string name="gyroscope_init">{x:0, y:0, z:0}</string>
+    <string name="arm_angle">Ankle Angle (\u00B0):&#160;&#160;&#160;</string>
+    <string name="acceleration">Acceleration (x,y,z):&#160;&#160;&#160;</string>
+    <string name="sss">SSS (s0,s1,s2):&#160;&#160;&#160;</string>
+    <string name="sss_init">{s0:0, s1:0, s2:0}</string>
+    <string name="acceleration_init">{x:0, y:0, z:0}</string>
+    <string name="mag_init">{x:0, y:0, z:0}</string>
+    <string name="location">Location (Lat, Lng):&#160;&#160;&#160;</string>
+    <string name="data_from">Data from:&#160;&#160;&#160;</string>
+    <string name="ellipsis">...</string>
+    <string name="triple_0">000</string>
+    <string name="favDev_mainTitle">Favourite Devices</string>
+
+
+
+    <string name="activity_main_imageView_description">MS_Tracking App version </string>
+    <string name="connect_button">Connect</string>
+
+    <string name="title_connecting">Connecting</string>
+    <string name="title_reconnect_attempt">Reconnecting</string>
+    <string name="message_wait">Please wait</string>
+    <string name="action_disconnect">Disconnect</string>
+    <string name="remove_button">Remove</string>
+
+    <string name="time_tv">Time:&#160;&#160;</string>
+    <string name="waiting_tv">waiting</string>
+    <string name="heart_rate_tv">Heart Rate:&#160;&#160;</string>
+    <string name="high_blood_pressure_tv">Blood Pressure (High):&#160;&#160;</string>
+    <string name="low_blood_pressure_tv">Blood Pressure (Low):&#160;&#160;</string>
+    <string name="steps_tv">Steps:&#160;&#160;</string>
+    <string name="minus_eins_tv">-1</string>
+    <string name="distance_tv">Distance (Km):&#160;&#160;</string>
+    <string name="calories_tv">Calories:&#160;&#160;</string>
+    <string name="sleeping_hours_tv">Sleeping hours:&#160;&#160;</string>
+    <string name="smartband_description">This tab allocates the information of a SmartBand device (when connected).
+        <br/>First it shows the MAC address of the device and two main buttons, which Start or Stop the information exchange between the device and the smartphone and also between the smartphone and the database.
+        <br/>The data is collected aprox. every minute.
+        <br/>The colors of the MAC address and time mean the following:</string>
+    <string name="mmr_description">This tab allocates the information of an MMR device (when connected).
+        <br/>First it shows the MAC address of the device and two main buttons, which Start or Stop the information exchange between the device and the smartphone and also between the smartphone and the database.
+        <br/>The colors of the MAC address mean the following:</string>
+    <string name="mmr2_description">This tab allocates the information of an MMR2 device (when connected).
+        <br/>First it shows the MAC address of the device and two main buttons, which Start or Stop the information exchange between the device and the smartphone and also between the smartphone and the database.
+        <br/>The colors of the MAC address mean the following:</string>
+    <string name="sock1_description">TO DO
+        <br/>TO DO.
+        <br/>TO DO</string>
+    <string name="green_color_description">The green color indicates that the device is properly connected and the smartphone is collecting data and sending it to the DataBase.</string>
+    <string name="orange_smartband_color_description">The orange color indicates that the smartphone is trying to reconnect the smartphone. It will be reconnected when it is within the range of the smartphone.</string>
+    <string name="orange_mmr_color_description">The orange color indicates that the smartphone is trying to reconnect the MMR. The reconnetion will star after 4min without receiving dta to collect, or by pressing the Stop button.</string>
+    <string name="orange_mmr2_color_description">The orange color indicates that the smartphone is trying to reconnect the MMR2. The reconnetion will star after 4min without receiving dta to collect, or by pressing the Stop button.</string>
+    <string name="red_color_description">The red color indicates that the data collecting is stopped.</string>
+
+    <string name="green_sock_color_description">The green color indicates that the device is properly connected and the smartphone is collecting data and sending it to the DataBase.</string>
+    <string name="orange_sock_color_description">The orange color indicates that the smartphone is trying to reconnect the Sock. The reconnetion will star after 4min without receiving dta to collect, or by pressing the Stop button.</string>
+    <string name="red_sock_color_description">The red color indicates that the data collecting is stopped.</string>
+
+
+
+
+
+    <string name="TEST_SENSORIA_CORE">Test Sensoria Core</string>
+    <string name="START_SCAN">Start Scan</string>
+    <string name="STOP_SCAN">Stop Scan</string>
+    <string name="CONNECT">Connect</string>
+    <string name="DISCONNECT">Disconnect</string>
+    <string name="STOP">Stop</string>
+    <string name="PAUSE">Pause</string>
+    <string name="START_SESSION">Start Session</string>
+    <string name="END_SESSION">End Session</string>
+    <string name="RESUME">Resume</string>
+    <string name="ACQUIRE_EEPROM">Acquire EEPROM</string>
+    <string name="RELEASE_EEPROM">Release EEPROM</string>
+    <string name="READ_DATA_CONFIGURATION_STORAGE">Read Config Storage</string>
+    <string name="READ_PROTOCOL_VERSION">Read Protocol Version</string>
+    <string name="GENERIC_ACCESS_SERVICE">Generic Access Service</string>
+    <string name="GENERIC_ATTRIBUTE_SERVICE">Generic Attribute Service</string>
+    <string name="DEVICE_INFORMATION_SERVICE">Device Information Service</string>
+    <string name="BATTERY_SERVICE">Battery Service</string>
+    <string name="SENSORIA_CORE_STREAMING_SERVICE">Streaming Service</string>
+    <string name="SENSORIA_CORE_CONTROL_POINT_SERVICE">Control Point Service</string>
+    <string name="SENSORIA_CORE_CUSTOM_CONFIGURATION_SERVICE">Custom Configuration</string>
+    <string name="SENSORIA_CORE_SMOKE_TEST_SERVICE">Smoke Test</string>
+    <string name="SENSORIA_CORE_CONFIGURATION_STORAGE">Configuration Storage</string>
+
+    <string name="ERROR_BLUETOOTH_NOT_SUPPORTED">Bluetooth is not supported on this device.</string>
+    <string name="ERROR_BLUETOOTH_LE_NOT_SUPPORTED">Bluetooth Low Energy is not supported on this
+        device.</string>
+    <string name="ERROR_TITLE">Error!</string>
+    <string name="ERROR_SCAN_NOT_STARTED">Cannot start BLE scan</string>
+    <string name="ERROR_NO_DEVICE_FOUND"> There is no device to connect to</string>
+    <string name="ERROR_NO_CONNECTION">Unable to connect to the specific device</string>
+    <string name="ERROR_INVALID_MAC_ADDRESS">The MAC address doo not match at any device</string>
+    <string name="ERROR_DEVICE_NOT_STARTED">Invalid or null device</string>
+    <string name="ERROR_INVALID_OR_NULL_CALLBACK">Invalid or null BluetoothGattCallback</string>
+    <string name="ERROR_NO_EEPROM">Cannot Acquire EEprom</string>
+    <string name="ERROR_CANNOT_WRITE_CONTROL_POINT">Cannot write control point</string>
+    <string name="ERROR_FAILURE">Unknown error</string>
+    <string name="ERROR_INVALID_PAYLOAD">Invalid Payload, resetting to default configuation</string>
+    <string name="ERROR_UNFORMATTED_STORAGE">Unformatted error, resetting to default configuation</string>
+    <string name="ERROR_CRC_FAILED">Failed CRC computation, resetting to default configuation</string>
+    <string name="ERROR_INSTANTIATION">Instantiation error</string>
+    <string name="ERROR_ILLEGAL_ACCESS">Illegal Access</string>
+    <string name="ERROR_INVALID_GARMENT_TYPE">Invalid Garment type</string>
+    <string name="ERROR_INVALID_BODY_LOCATION">Invalid Body location</string>
+    <string name="ERROR_INVALID_SENSOR_TYPE">Invalid Sensor type</string>
+    <string name="ERROR_EXCEEDS_BOUNDS_EEPROM">ECalculated address exceeds bounds of EEPROM device
+        </string>
+    <string name="ERROR_MAXIMUM_NUMBER_OF_BYTES_EEPROM">
+        Requested number of bytes to be written is greater than maximum. (16 bytes)
+    </string>
+    <string name="ERROR_SCAN_ALREADY_STARTED">
+        Fails to start scan as BLE scan with the same settings is already started by the app.
+    </string>
+    <string name="ERROR_SCAN_APPLICATION_REGISTRATION_FAILED">
+        Fails to start scan as app cannot be registered.</string>
+    <string name="ERROR_FEATURE_NOT_IMPLEMENTED">
+        Fails to start power optimized scan as this feature is not supported.
+    </string>
+    <string name="ERROR_SCAN_INTERNAL_ERROR">Fails to start scan due an internal error</string>
+    <string name="ERROR_ILLEGAL_ARGUMENT_EXCEPTION">
+        The method has been passed an illegal or inappropriate argument.
+    </string>
+    <string name="ERROR_GATT_NOT_INITIALIZED">
+        You need initialize the GATT before using the device: use start before.</string>
+    <string name="ERROR_GATT_NOT_CONNECTED">Cannot pause the device if not connected.</string>
+    <string name="ERROR_GATT_NOT_PAUSED">Cannot stop service without pausing before.</string>
+    <string name="ERROR_NULL_OR_NOT_IMPLEMENTED_SERVICE_INTERFACE">
+        The SAServiceInterface is null or not implemented in Service</string>
+    <string name="ERROR_CALIBRATION_TIMEOUT">Calibration expired after %d ticks</string>
+    <string name="ERROR_CALIBRATION_TIMEOUT_STRING">Calibration expired after %s ticks</string>
+    <string name="ERROR_INVALID_SAMPLING_RANGE_VALUES">Invalid Sampling range</string>
+    <string name="ERROR_INVALID_SAMPLING_RATE_VALUES">Invalid sampling rate</string>
+    <string name="ERROR_CALIBRATION_FAILURE">Calibration failure</string>
+    <string name="ERROR_TYPE_DFU_REMOTE">Cannot open device for DFU</string>
+    <string name="ERROR_INVALID_SAMPLING_PERIOD_RANGE">Invalid sampling period range</string>
+    <string name="ERROR_INVALID_CHANNEL_PROTOCOL">Invalid channel protocol</string>
+    <string name="ERROR_CHARACTERISTIC_NOT_IMPLEMENTED">A mandatory service characteristic is not implemented</string>
+    <string name="ERROR_OPTIONAL_CHARACTERISTIC_NOT_IMPLEMENTED">An optional service characteristic is not implemented</string>
+    <string name="ERROR_INVALID_DEVICE_NAME_LENGTH">Invalid device name length</string>
+    <string name="ERROR_NOT_SUPPORTED">Not supported</string>
+    <string name="ERROR_UNKNOWN_BLOCK">Unknown block</string>
+    <string name="ERROR_UNKNOWN_FUNCTION">Unknown function</string>
+    <string name="ERROR_UNKNOWN_PROPERTY">Unknown property</string>
+    <string name="ERROR_CONNECTION_CONGESTED">A remote device connection is congested.</string>
+    <string name="ERROR_INSUFFICIENT_AUTHENTICATION">Insufficient authentication for a given operation</string>
+    <string name="ERROR_INSUFFICIENT_ENCRYPTION">Insufficient authentication for a given operation</string>
+    <string name="ERROR_INVALID_ATTRIBUTE_LENGTH">A write operation exceeds the maximum length of the attribute</string>
+    <string name="ERROR_INVALID_OFFSET">A read or write operation was requested with an invalid offset</string>
+    <string name="ERROR_READ_NOT_PERMITTED">GATT read operation is not permitted</string>
+    <string name="ERROR_REQUEST_NOT_SUPPORTED">The given request is not supported</string>
+    <string name="ERROR_WRITE_NOT_PERMITTED">GATT write operation is not permitted</string>
+    <string name="ERROR_UNEXPECTED_PROTOCOL_LENGTH">Unexpected protocol length</string>
+    <string name="ERROR_TIMEOUT">The function received a timeout error</string>
+    <string name="ERROR_NOT_IN_STATE_DISCONNECTED">The device is not disconnected: you need disconnect the device before trying to connect again</string>
+    <string name="WARNING_TITLE">Warning !!!!</string>
+    <string name="ENTER_DFU_MODE_MESSAGE">You are about to enter in DFU mode to upload new firmware.\n
+        Don\'t reset the device during the operation!\nEnter:\n\tOK to accept\n\tCancel to
+        refuse.
+    </string>
+    <string name="ERROR_HAPTIC_DRIVER_FAILED">Haptic driver configuration failed.</string>
+    <string name="ERROR_NO_HAPTIC_DRIVER_FOUND">Haptic driver not found.</string>
+    <string name="ERROR_NO_CALIBRATION_PARAM_FOUND">Haptic driver calibration parameter not found.</string>
+    <string name="ERROR_CALIBRATION_FAILED">Haptic driver calibration failed.</string>
+    <string name="ERROR_OUT_OF_BOUNDS_STRENGTH">Haptic driver strength out of bounds. Strength must be between 0 - 127.</string>
+    <string name="ERROR_MAGNETOMETER_CALIBRATION_FAILED">Magnetometer calibration failed.</string>
+    <string name="SUCCESS_TITLE">Success!</string>
+    <string name="SUCCESS_WRITE_CONFIGURATION_STORAGE">Configuration Storage written!</string>
+
+    <string name="START_SERVICE">Start Service</string>
+    <string name="STOP_SERVICE">Stop Service</string>
+    <string name="ZERO">0</string>
+
+    <string name="PERMISSION_TITLE">Permission Needed</string>
+    <string name="PERMISSION_GRANTED">Permissions granted</string>
+
+    <string name="PERMISSION_GRANTED_LOCATION">Permission granted for location</string>
+    <string name="PERMISSION_DENIED_LOCATION">Permission denied for Position</string>
+    <string name="PERMISSION_DISABLED_LOCATION">The location permission for this app was disabled.
+        If you disable this permission your app won\'t be able to work.
+        Please manually enable location permission in settings/app/authorization and try again.
+    </string>
+
+    <string name="RATIONALE_LOCATION">This app was designed to use Bluetooth Low Energy capability.
+        If you disable location permission you won\'t be able to use it</string>
+    <string name="read_battery_level">Read battery level</string>
+    <string name="battery_level_status">Battery level status</string>
+
+    <string name="read_device_name">Read device name</string>
+    <string name="appearance">Appearance</string>
+    <string name="minimum_connection_interval">Minimum connection interval</string>
+    <string name="maximum_connection_interval">Maximum connection interval</string>
+    <string name="slave_latency">Slave latency</string>
+    <string name="connection_supervision_timeout_multiplayer">Connection Supervision timeout multiplier</string>
+    <string name="central_address_resolution_support">Central Address resolution Support</string>
+    <string name="resolvable_private_address_only">Resolvable Private Address Only</string>
+
+    <string name="TICK">Tick</string>
+    <string name="S0">S0</string>
+    <string name="S1">S1</string>
+    <string name="S2">S2</string>
+    <string name="ACCX">AccX</string>
+    <string name="ACCY">AccY</string>
+    <string name="ACCZ">AccZ</string>
+    <string name="MAGNX">MagnX</string>
+    <string name="MAGNY">MagnY</string>
+    <string name="MAGNZ">MagnZ</string>
+    <string name="GYROX">GyroX</string>
+    <string name="GYROY">GyroY</string>
+    <string name="GYROZ">GyroZ</string>
+    <string name="SAMPLE_RATE">N/E Sampling rate</string>
+    <string name="PACKET_LOST">Packet lost</string>
+    <string name="GyrS">Gyr Sock1</string>
+    <string name="Ubicacion">Ubicación</string>
+
+    <string name="ENTER_DFU_MODE">Enter DFU Mode</string>
+
+    <string-array name="motor_id_array">
+        <item>ERM 1</item>
+        <item>LRA 1</item>
+    </string-array>
+
+    <string name="STORAGE_HEADER">Storage Header:</string>
+    <string name="TIMESTAMP">Timestamp:</string>
+    <string name="SERIAL_NUMBER">Serial Number:</string>
+    <string name="PAYLOAD">Custom Payload:</string>
+
+    <string name="time_format">%d s.</string>
+    <string name="sampling_rate_format">%d Hz.</string>
+    <string name="acc_range_format">&#177;%d g</string>
+    <string name="gyr_range_format">&#177;%d DPS</string>
+    <string name="mag_range_format">&#177;%d Gs</string>
+    <string-array name="format_values">
+        <item>X=%d mGs</item>
+        <item>Y=%d mGs</item>
+        <item>Z=%d mGs</item>
+    </string-array>
+    <string-array name="controls_name">
+        <item>X calibration value</item>
+        <item>Y calibration value</item>
+        <item>Z calibration value</item>
+    </string-array>
+
+    <string name="READ_ACCELEROMETER_SAMPLING_RATE">Read Accelerometer sampling rate</string>
+    <string name="READ_ACCELEROMETER_SAMPLING_RANGE">Read Accelerometer sampling range</string>
+    <string name="RESTORE_ACCELEROMETER_DEFAULTS">Restore Accelerometer defaults</string>
+    <string name="READ_GYROSCOPE_SAMPLING_RATE">Read Gyroscope sampling rate</string>
+    <string name="READ_GYROSCOPE_SAMPLING_RANGE">Read Gyroscope sampling range</string>
+    <string name="RESTORE_GYROSCOPE_DEFAULTS">Restore Gyroscope defaults</string>
+    <string name="READ_MAGNETOMETER_SAMPLING_RATE">Read Magnetometer sampling rate</string>
+    <string name="READ_MAGNETOMETER_SAMPLING_RANGE">Read Magnetometer sampling range</string>
+    <string name="RESTORE_MAGNETOMETER_DEFAULTS">Restore Magnetometer defaults</string>
+    <string name="READ_MAGNETOMETER_CALIBRATION_VALUES">
+        Read Magnetometer calibration values
+    </string>
+    <string name="TRIGGER_MAGNETOMETER_CALIBRATION_ROUTINE">
+        Trigger Magnetometer calibration routine
+    </string>
+    <string-array name="mandatory_values">
+        <item>true</item>
+        <item>true</item>
+        <item>true</item>
+    </string-array>
+
+    <string name="DETECT_HAPTIC_DRIVER">Detect Haptic Driver</string>
+    <string name="RELEASE_HAPTIC_DRIVER">Release Haptic Driver</string>
+    <string name="CALIBRATE_HAPTIC_DRIVER">Calibrate Haptic Driver</string>
+    <string name="TURN_MOTOR_ON">Turn Motor On</string>
+    <string name="TURN_MOTOR_OFF">Turn Motor Off</string>
+
+    <string name="RESET">Reset</string>
+
+
+    <string name="LOAD_DEFAULT_SETTINGS">Load system wide default settings</string>
+
+    <string name="READ_ADVERTISING_TIMEOUT">Read Advertising Timeout</string>
+
+    <string name="WRITE_ADVERTISING_TIMEOUT">Write Advertising Timeout</string>
+
+    <string name="channel1">Channel 0</string>
+    <string name="channel2">Channel 1</string>
+    <string name="channel3">Channel 2</string>
+    <string name="read_channel_settings">Read</string>
+    <string name="write_channel_settings">Write</string>
+    <string name="restore_default_channel_settings">Restore</string>
+    <string name="sampling_period">Period</string>
+    <string name="protocol_type">Protocol</string>
+    <string name="enable_channel">Enable</string>
+    <string name="transmit_via_ble">Send</string>
+    <string name="log_to_local_memory">Store</string>
+
+    <string name="READ_SYSTEM_STATUS">Read system status</string>
+    <string name="BATTERY_READING_ACTIVE">Battery reading is active</string>
+    <string name="NAND_MEMORY_MODULE_FOUND">NAND memory module found</string>
+    <string name="SPIM2_IS_CONFIGURED">SPIM2 is configured</string>
+    <string name="SPIM1_IS_CONFIGURED">SPIM1 is configured</string>
+    <string name="SPIS0_IS_CONFIGURED">SPIS0 is configured</string>
+    <string name="DATA_LOGGER_ACTIVE">Data logger active</string>
+    <string name="BATTERY_LEVEL_IS_ABOVE_WARNING_THRESHOLD">Battery level above threshold
+    </string>
+    <string name="CORE_IS_IN_A_CHARGING_MODE">Core is in a charging mode</string>
+    <string name="SAMPLING_READY">Sampling ready</string>
+    <string name="FILE_TABLE_BUILT">File table built</string>
+    <string name="LISTENING_TO_EVENT_CHANNEL">Listening to Event channel</string>
+    <string name="LISTENING_TO_CHANNEL_2">Listening to Channel 2</string>
+    <string name="LISTENING_TO_CHANNEL_1">Listening to Channel 1</string>
+    <string name="LISTENING_TO_CHANNEL_0">Listening to Channel 0</string>
+    <string name="CORE_IS_CONNECTED_TO_DEVICE_VIA_BLE">Connected device via BLE</string>
+    <string name="ADC_7_is_enabled">ADC 7 is enabled</string>
+    <string name="ADC_6_is_enabled">ADC 6 is enabled</string>
+    <string name="ADC_5_is_enabled">ADC 5 is enabled</string>
+    <string name="ADC_4_is_enabled">ADC 4 is enabled</string>
+    <string name="ADC_3_is_enabled">ADC 3 is enabled</string>
+    <string name="ADC_2_is_enabled">ADC 2 is enabled</string>
+    <string name="ADC_1_is_enabled">ADC 1 is enabled</string>
+    <string name="ADC_0_is_enabled">ADC 0 is enabled</string>
+
+    <string name="SAVE_AND_EXIT">Save configuration and exit</string>
+    <string name="EXIT_WO_SAVE">Exit without saving</string>
+    <string name="NEW_CONFIGURATION_STORAGE">New Configuration</string>
+
+    <string name="dfu_uploading_percentage">%d%%</string>
+    <string name="not_available">n/a</string>
+    <string name="dfu_file_status_ok">OK</string>
+    <string name="dfu_about_text">The Device Firmware Update (DFU) app allows you to update the firmware of your Bluetooth Smart device over-the-air (OTA).
+		It is compatible with Nordic Semiconductor nRF51822 or nRF51422 devices with S110 SoftDevice and DFU bootloader enabled. With SoftDevice s110 7.0.0+,
+		the SoftDevice itself and/or a bootloader may also be updated.
+		\n\nFor more information about the DFU, see the About DFU section in Settings.</string>
+    <string name="dfu_file_status_ok_with_init">OK (Init file selected)</string>
+    <string name="dfu_file_status_error">Reading file failed</string>
+    <string name="dfu_file_size_text">%d bytes</string>
+    <string-array name="dfu_file_type">
+        <item>Distribution packet (ZIP)</item>
+        <item>Soft Device</item>
+        <item>Bootloader</item>
+        <item>Application</item>
+    </string-array>
+    <string name="dfu_file_status_invalid">Invalid file</string>
+    <string name="dfu_help_title">Select file</string>
+    <string name="dfu_help_message">A file browser application must be installed on the device before selecting the file.
+		\n\nThere are number of applications available on Google Play store, e.g. Total Commander or File Manager, that allow you to pick a file from internal memory of the device. To upload
+		a file from the Internet you may use f.e. Drive or Dropbox application.
+		\n\nYou will be asked to select an application if more than one is installed. A single application will be launched automatically.
+		\n\nSince <b>Android KitKat</b> you may use the preinstalled document picker application. Ensure <i>Display advanced devices</i> option is enabled in settings to use the <i>Internal storage</i>.
+		\n\nSample applications were copied to <i>Nordic Semiconductor</i> folder in the internal storage.</string>
+    <string name="dfu_alert_no_filebrowser_title">File Browser not found</string>
+
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+
+    <string-array name="dfu_app_file_browser_action">
+        <item>market://details?id=com.google.android.apps.docs</item>
+        <item>market://details?id=com.rhmsoft.fm</item>
+        <item>market://details?id=com.ghisler.android.TotalCommander</item>
+        <item>market://search?q=file manager</item>
+    </string-array>
+
+    <string name="dfu_file_status_invalid_message">Please, select valid HEX file</string>
+
+    <string name="dfu_action_upload_cancel">CANCEL</string>
+    <string name="dfu_success">Application has been transferred successfully.</string>
+    <string name="dfu_aborted">Uploading of the application has been canceled.</string>
+    <string name="dfu_action_upload">UPLOAD</string>
+    <string name="dfu_default_name">DEFAULT DFU</string>
+    <string name="dfu_file_status_no_file">File not loaded</string>
+    <string name="about_version">\n\nVersion: %s</string>
+    <string name="about_title">About</string>
+    <string name="dfu_confirmation_dialog_title">Application Uploading</string>
+    <string name="dfu_upload_dialog_cancel_message">Are you sure to cancel upload?</string>
+    <string-array name="dfu_app_file_browser">
+        <item>Drive</item>
+        <item>File Manager</item>
+        <item>Total Commander</item>
+        <item>Search for others</item>
+    </string-array>
+    <string name="dfu_settings_dfu_number_of_packets_info">During a DFU operation a lot of data packets are being sent to the target. The <i>onCharacteristicWrite(...)</i>
+		callback in Android API is invoked when the data has been written to the outgoing queue, not when physically sent. Packet receipt notifications were introduced to
+		prevent from overflowing the queue. Depending on the device model, disabling the notifications or setting the value to “high” (> ~300) may make the DFU process freeze
+		at some point.</string>
+    <string name="dfu_settings_dfu_assume_dfu_mode_info">Check this switch to ON if you want to perform a DFU operation without jumping to the bootloader mode on a device
+		with a DFU implementation from SDK 6.1 or older. To achieve the same result on any newer implementation the DFU Version characteristic should return value other than 0x0100.</string>
+    <string name="dfu_settings_dfu_about">About DFU</string>
+    <string name="dfu_settings_dfu_information">Information</string>
+
+    <string name="dfu_settings_dfu">DFU options</string>
+    <string name="dfu_settings_dfu_packets_receipt_notification_label">Packets receipt notification procedure</string>
+    <string name="dfu_settings_dfu_number_of_packets_label">Number of packets</string>
+    <string name="dfu_settings_dfu_mbr_size">MBR size</string>
+    <string name="dfu_settings_dfu_mbr_size_title">MBR size (4096 on nRF51, 12288 on nRF52)</string>
+    <string name="dfu_settings_dfu_keep_bond">Keep bond information</string>
+    <string name="dfu_settings_dfu_assume_dfu_mode">External MCU DFU</string>
+    <string name="dfu_settings_dfu_about_summary">DFU documentation on Nordic\'s Developer Zone</string>
+
+    <string name="font_path">fonts/trebucbd.ttf</string>
+    <string name="normal_font_path">fonts/trebuc.ttf</string>
+
+    <string name="dfu_feature_title_long">Sensoria Firmware Update</string>
+    <dimen name="dfu_feature_title_long_margin">-186dp</dimen>
+
+    <dimen name="activity_vertical_margin_bottom_narrow">16dp</dimen>
+    <dimen name="feature_horizontal_margin">50dp</dimen>
+    <dimen name="feature_vertical_margin_top">50dp</dimen>
+    <dimen name="feature_vertical_margin_top_narrow">26dp</dimen>
+    <dimen name="feature_section_padding">8dp</dimen>
+    <dimen name="feature_device_name_margin_top">8dp</dimen>
+    <dimen name="feature_grid_margin_top">0dp</dimen>
+    <dimen name="feature_uart_buttons_pane_width">256dp</dimen>
+    <dimen name="feature_uart_buttons_pane_height">256dp</dimen>
+
+    <dimen name="navdrawer_width">260dp</dimen>
+    <dimen name="navdrawer_padding_top">30dp</dimen>
+    <dimen name="navdrawer_padding_horiz">16dp</dimen>
+
+    <dimen name="alert_dialog_padding">24dp</dimen>
+    <dimen name="alert_dialog_padding_top">18dp</dimen>
+    <dimen name="alert_dialog_padding_bottom">0dp</dimen>
+
+    <string name="dfu_section_application_header">Choose Firmware File</string>
+    <string name="dfu_file_name_label">File Name:</string>
+    <string name="dfu_file_type_label">File Type:</string>
+    <string name="dfu_file_size_label">File Size:</string>
+    <string name="dfu_file_status_label">Status:</string>
+    <string name="dfu_action_select_file">SELECT FILE</string>
+    <string name="dfu_section_dfu_header">Device Firmware Update</string>
+    <string name="dfu_uploading_percentage_label">0%</string>
+    <string name="dfu_lib_version">Sensoria Library version 2.7.0</string>
+
+    <string name="dfu_alert_no_filebrowser_message">File browser application has not been found on your device. Would you like to download one?</string>
+    <string name="action_about">About</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="wakeup_choice">
+        <item>None</item>
+        <item>Wake On Tap</item>
+        <item>Wake On Shake</item>
+        <item>Wake On Tilt</item>
+    </string-array>
+
+    <string-array name="saved_config">
+        <item>Default 0</item>
+        <item>Default 1</item>
+        <item>Default 2</item>
+        <item>Default 3</item>
+    </string-array>
+
+    <string-array name="transmit_protocol">
+        <item>D20</item>
+        <item>E20</item>
+        <item>F20</item>
+        <item>G20</item>
+        <item>H20</item>
+        <item>I20</item>
+        <item>J20</item>
+    </string-array>
+
+    <string name="dfu_feature_title">DFU</string>
+    <string name="dfu_service_title">nRF Toolbox DFU Proxy</string>
+    <string name="dfu_settings_title">DFU Settings</string>
+    <string name="csc_settings_title">CSC Settings</string>
+
+
+
+</resources>

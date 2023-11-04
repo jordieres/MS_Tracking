@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.upm.jgp.ms_tracking">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!--Bluetooth Permission (soft)-->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!--Those should be also soft permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- From API28 Apps wanting to use foreground services must now request the FOREGROUND_SERVICE permission first -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icono"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icono_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="ExtraText">  <!-- Starting with Android 9.0 (API level 28), cleartext support is disabled by default.-->
+
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <service android:name="com.mbientlab.metawear.android.BtleService" />
+        <!-- Other application info below i.e. activity definitions -->
+
+
+        <activity
+            android:name=".ui.main.activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.main.fragments.smartband.ScanSmartBandActivity" />
+        <activity android:name=".ui.main.activity.TabWearablesActivity" />
+        <activity android:name=".ui.main.activity.ChooseDeviceToScanActivity" />
+        <activity android:name=".ui.main.fragments.mmr.ScanMMRActivity" />
+        <activity android:name=".ui.main.fragments.mmr.ScanMMR2Activity" />
+        <activity android:name=".ui.main.activity.FavouriteDevices" />
+        <activity android:name=".ui.main.fragments.socks.SensoriaCoreStreamingServiceActivity"/>
+        <activity android:name=".ui.main.fragments.socks.ScanSockActivity" />
+        <activity android:name=".ui.main.fragments.socks.ScanSock2Activity" />
+        <activity android:name=".ui.main.fragments.socks.SensoriaCoreStreamingServiceActivity2"/>
+        <activity android:name=".ui.main.fragments.socks.NEEWW"/>
+        <service android:name=".ui.main.fragments.common.MyService"></service>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="firebase_performance_logcat_enabled"
+            android:value="true" />
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
+
+        <activity
+            android:name=".ui.main.fragments.socks.CoreTestActivity"
+            android:label="Core" />
+
+        <activity
+            android:name=".ui.main.fragments.socks.CoreTestActivity2"
+            android:label="Core" />
+
+        <activity android:name=".ui.main.fragments.socks.GenericAttributeServiceActivity" />
+        <activity android:name=".ui.main.fragments.socks.GenericAttributeServiceActivity2" />
+        <activity android:name=".ui.main.fragments.socks.DeviceInformationServiceActivity" />
+        <activity android:name=".ui.main.fragments.socks.DeviceInformationServiceActivity2" />
+        <activity
+            android:name=".ui.main.fragments.socks.SettingsActivity"
+            android:label="@string/csc_settings_title"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+    </application>
+
+</manifest>

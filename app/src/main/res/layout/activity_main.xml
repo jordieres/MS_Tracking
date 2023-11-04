@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/activity_main_infoFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:scaleType="center"
+        app:backgroundTint="@color/colorAccent"
+        app:backgroundTintMode="src_in"
+        app:maxImageSize="50dp"
+        app:rippleColor="@color/colorAccent"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+    <ImageView
+        android:id="@+id/activity_main_imageView"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/activity_main_imageView_description"
+        app:srcCompat="@mipmap/logohw"
+        tools:visibility="visible" />
+
+    <!--  <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:layout_marginTop="330dp">
+
+          <TextView
+              android:id="@+id/activity_main_titleTextView"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:fontFamily="serif"
+              android:text="@string/main_title"
+              android:textAlignment="center"
+              android:textColor="@color/white"
+              android:textSize="36sp"
+              android:textStyle="bold" />
+
+      </LinearLayout>
+      -->
+
+
+    <Button
+        android:id="@+id/activity_main_scan_button"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="130dp"
+        android:background="@drawable/press_button"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:onClick="onClick"
+        android:paddingStart="20dp"
+        android:paddingEnd="30dp"
+        android:text="@string/scan_button"
+        android:textColor="@color/stainedwhite"
+        android:textSize="18sp"
+        tools:ignore="ButtonStyle" />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="130dp"
+            android:layout_marginRight="40dp"
+
+            android:id="@+id/activity_main_fav_button"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/press_button"
+            android:drawableStart="@android:drawable/btn_star_big_on"
+            android:onClick="onClick"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="@string/fav_button"
+            android:textColor="@color/stainedwhite"
+            android:textSize="18sp" />
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          >
+
+          <TextView
+              android:id="@+id/activity_main_versionTextView"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:fontFamily="sans-serif-thin"
+              android:text="@string/app_version"
+              android:textColor="#FFFFFF"
+              android:textSize="16sp" />
+
+
+      </LinearLayout>
+  </RelativeLayout>

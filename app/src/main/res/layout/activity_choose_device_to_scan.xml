@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:foregroundTint="@color/stainedwhite"
+    android:foregroundTintMode="screen">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myToolbar_choose_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@color/stainedwhite2" />
+
+    <RelativeLayout
+        android:id="@+id/choose_scan_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/myToolbar_choose_scan"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/choose_device"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <!--ImageView
+            android:id="@+id/scan_drag"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:onClick="onClick"
+            android:src="@drawable/refresh"
+            android:visibility="gone"
+            android:contentDescription="Refresh button"/-->
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/choose_scan_header"
+        android:layout_centerInParent="true"
+        android:alignmentMode="alignMargins"
+        android:background="@color/stainedwhite2"
+        android:columnCount="1"
+        android:padding="10dp"
+        android:rowCount="6">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CV_card_selection_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_rowWeight="0"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="16dp"
+                    app:cardBackgroundColor="@color/color4"
+                    android:onClick="onClick"
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+                        android:id="@+id/LL_card_selection_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="onClick"
+                        app:cardCornerRadius="15dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:contentDescription="@string/sock1device"
+                            android:padding="10dp"
+                            android:src="@drawable/calc"
+                            android:layout_marginLeft="15dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:paddingEnd="10dp"
+                            android:text="@string/sock1device"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="25sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+    </GridLayout>
+
+</RelativeLayout>

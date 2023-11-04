@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00C6FF</color>
+    <color name="holo_blue_light">#67a098</color>
+    <color name="colorPrimaryDark">#52a095</color>
+    <color name="colorAccent">#274c47</color>
+    <color name="color1">#f1c3a4</color>
+    <color name="color11">#b08e78</color>
+    <color name="color2">#85bbb3</color>
+    <color name="color22">#4a6864</color>
+    <color name="color3">#e6bb77</color>
+    <color name="color33">#a18353</color>
+    <color name="color4">#94bbc4</color>
+    <color name="color44">#546a6f</color>
+    <color name="color5">#f4d4a4</color>
+    <color name="color55">#a28d6d</color>
+    <color name="color6">#7ea9aa</color>
+    <color name="color66">#496262</color>
+    <color name="colorAccentLight">#67a098</color>
+    <color name="cream">#31766d</color>
+    <color name="white">#FFFFFF</color>
+    <color name="stainedwhite2">#Fcf8f3</color>
+    <color name="stainedwhite">#f2e1c7</color>
+    <color name="grey">#838383</color>
+    <color name="green">#55CC00</color>
+    <color name="red">#CC0000</color>
+    <color name="orange">#FF7E00</color>
+    <!--Switch Colors-->
+    <color name="disable_foreground_grey">#42221f1f</color>
+    <color name="disable_thumb_grey">#1c000000</color>
+    <color name="enable_thumb_green">#46bdbf</color>
+
+    <color name="featureTitleColor">#939597</color>
+    <color name="actionBarColor">#ff99cc00</color>
+    <color name="actionBarColorDark">#FF669900</color>
+    <color name="nordicBackground">#FFF5F5F5</color>
+    <color name="backgroundColor">#E6E7E8</color>
+    <color name="dark_orange">#9E3F1E</color>
+    <color name="light_orange">#EFB5A0</color>
+    <color name="headerBackgroundColor">#FF99CCDA</color>
+    <color name="headerBackgroundColorDark">#ff6699B7</color>
+    <color name="headerTextColor">#FFFFFF</color>
+    <color name="actionBarMenuTextColor">#FFFFFF</color>
+
+    <color name="darkGray">#AAABAF</color>
+</resources>

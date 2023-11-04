@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.fragments.tabs.TabFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context="com.example.sockdata.SockSetupActivityFragment"
+            tools:showIn="@layout/activity_tab_wearables">
+
+            <TextView
+                android:id="@+id/sock1_mac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="@string/data_from"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/sock1_value_mac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="16dp"
+                android:layout_toRightOf="@id/sock1_mac"
+                android:text="@string/ellipsis"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/sock1_acc_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sock1_value_mac"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:text="@string/start_button" />
+
+            <Button
+                android:id="@+id/sock1_acc_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sock1_acc_start"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="12dp"
+                android:text="@string/stop_button" />
+
+            <TextView
+                android:id="@+id/sock1_lab_gyr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sock1_acc_stop"
+                android:text="@string/gyroscope"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/sock1_value_gyr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sock1_lab_gyr"
+                android:text="@string/gyroscope_init"
+                android:textColor="@color/holo_blue_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sock1_lab_mag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sock1_value_gyr"
+                android:text="@string/magnetometer"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/sock1_value_mag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sock1_lab_mag"
+
+                android:text="@string/mag_init"
+                android:textColor="@color/holo_blue_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sock1_lab_acc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sock1_value_mag"
+                android:text="@string/acceleration"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/sock1_value_acc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sock1_lab_acc"
+                android:text="@string/acceleration_init"
+                android:textColor="@color/holo_blue_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sock1_lab_sss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sock1_value_acc"
+                android:text="@string/sss"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/sock1_value_sss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sock1_lab_sss"
+                android:text="@string/sss_init"
+                android:textColor="@color/holo_blue_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linea"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@id/sock1_value_sss">
+
+
+                <View
+                    android:layout_width="320dp"
+                    android:layout_height="2dp"
+                    android:background="#E91E63"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sock2_mac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linea"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/data_from"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/sock2_value_mac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linea"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp"
+                android:layout_toEndOf="@id/sock2_mac"
+                android:text="@string/ellipsis"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/sock2_acc_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sock2_value_mac"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:text="@string/start_button" />
+
+            <Button
+                android:id="@+id/sock2_acc_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sock2_acc_start"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="12dp"
+                android:text="@string/stop_button" />
+
+            <TextView
+                android:id="@+id/sock2_lab_gyr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sock2_acc_stop"
+                android:text="@string/gyroscope"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/sock2_value_gyr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sock2_lab_gyr"
+                android:text="@string/gyroscope_init"
+                android:textColor="@color/holo_blue_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sock2_lab_mag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sock2_value_gyr"
+                android:text="@string/magnetometer"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/sock2_value_mag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sock2_lab_mag"
+
+                android:text="@string/mag_init"
+                android:textColor="@color/holo_blue_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sock2_lab_acc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sock2_value_mag"
+                android:text="@string/acceleration"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/sock2_value_acc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sock2_lab_acc"
+                android:text="@string/acceleration_init"
+                android:textColor="@color/holo_blue_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sock2_lab_sss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sock2_value_acc"
+                android:text="@string/sss"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/sock2_value_sss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sock2_lab_sss"
+                android:text="@string/sss_init"
+                android:textColor="@color/holo_blue_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_tabs_section_labelS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_marginEnd="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margin"
+                app:srcCompat="@android:drawable/ic_input_add" />
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

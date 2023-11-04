@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SensoriaMultiEdit">
+        <attr name="hasFocusColor" format="color" />
+        <attr name="hasNotFocusColor" format="color" />
+        <attr name="calibrationValues" format="reference" />
+        <attr name="mandatories" format="reference"/>
+        <attr name="formats" format="reference"/>
+        <attr name="names" format="reference" />
+        <attr name="android:inputType" />
+        <attr name="android:nextFocusDown" />
+        <attr name="android:nextFocusUp" />
+        <attr name="android:imeOptions" />
+        <attr name="android:textSize" />
+        <attr name="android:enabled" />
+        <attr name="android:textStyle" />
+    </declare-styleable>
+    <declare-styleable name="SensoriaEditText">
+        <attr name="focusColor" format="color" />
+        <attr name="idleColor" format="color" />
+        <attr name="format"  format="string"/>
+        <attr name="mandatory"  format="boolean"/>
+        <attr name="android:inputType" />
+        <attr name="android:textStyle" />
+    </declare-styleable>
+    <declare-styleable name="ForegroundRelativeLayout">
+        <attr name="foreground" format="reference|color" />
+    </declare-styleable>
+</resources>

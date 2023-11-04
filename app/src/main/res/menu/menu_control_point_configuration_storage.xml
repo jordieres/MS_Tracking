@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_new_base_configuration"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/NEW_CONFIGURATION_STORAGE"
+        android:enabled="true"
+        android:onClick="newConfigurationStorage" />
+
+    <item
+        android:id="@+id/menu_save"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="@string/SAVE_AND_EXIT"
+        android:enabled="true"
+        android:onClick="SaveConfigurationStorage" />
+
+    <item
+        android:id="@+id/menu_close"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:title="@string/EXIT_WO_SAVE"
+        android:enabled="true"
+        android:onClick="ExitWithoutSaving" />
+
+</menu>

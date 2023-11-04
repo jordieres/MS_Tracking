@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "460739931240",
+    "project_id": "health-operator",
+    "storage_bucket": "health-operator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460739931240:android:a3e93bff68fa47eb359fdd",
+        "android_client_info": {
+          "package_name": "com.upm.jgp.ms_tracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460739931240-ccadpb3vq4q37kjl1sbqsmj4ciurfqob.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXcJ7EC3-wS2hzjcCqK3VEaV3z6B-7FhI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460739931240-ccadpb3vq4q37kjl1sbqsmj4ciurfqob.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
