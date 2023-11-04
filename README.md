@@ -1,4 +1,3 @@
-![RFCS Logo](/images/rfcs.png)
 --:![ECDGresearch Logo](/images/dgri_ec.png)
 
 # MS_Tracking
@@ -14,6 +13,6 @@ according to the interesting Android releases.
 
 =====
 
-Madrid 16/05/2023
+Madrid 04/11/2023
 
-# MS_Tracking
+
