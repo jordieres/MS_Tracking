@@ -1,4 +1,3 @@
---:![ECDGresearch Logo](/images/dgri_ec.png)
 
 # MS_Tracking
 Repository holding the sensor fusion and proposed architecture created according the Framework proposed in the JMIR paper.
